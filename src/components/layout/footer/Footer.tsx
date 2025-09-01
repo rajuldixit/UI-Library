@@ -1,22 +1,18 @@
 "use client";
 
-import Link from "next/link";
-
-interface FooterProps {
-  links: { href: string; label: string }[];
-}
-
-export default function Footer({ links }: FooterProps) {
+export default function Footer() {
   return (
-    <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
-      <div className="text-xl font-bold">MyApp</div>
-      <ul className="flex gap-6">
-        {links.map((link) => (
-          <li key={link.href}>
-            <Link href={link.href}>{link.label}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <footer className="bg-gray-900 text-white py-6 mt-auto">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div className="text-center md:text-left mb-4 md:mb-0">
+            © 2025 Component Playground
+            </div>
+            <div className="flex gap-4">
+            <a href="#">GitHub</a>
+            <a href="#">Docs</a>
+            <a href="#">About</a>
+            </div>
+        </div>
+    </footer>
   );
 }
