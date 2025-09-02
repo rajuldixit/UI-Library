@@ -1,12 +1,17 @@
 'use client'
 
 import { Navbar, Hero, Footer } from "@/components/layout";
-import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">        
-      <Navbar links={[]} />
+      <Navbar
+        links={[
+          { href: "/", label: "Home" },
+          { href: "/about", label: "About" },
+        ]}
+        cta={{ href: "/docs", label: "Docs" }}
+      />
       <main className="flex-1">
         <Hero />
       </main>
