@@ -19,5 +19,5 @@ It comes with a **component playground** powered by MDX for documentation and li
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/component-playground.git
+[git clone https://github.com/your-username/component-playground.git](https://github.com/rajuldixit/UI-Library.git)
 cd component-playground
